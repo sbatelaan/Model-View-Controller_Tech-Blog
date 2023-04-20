@@ -13,8 +13,7 @@
     <ul class="flex-row">
       <li class="li-inline nav-item"><a href="/">Home</a></li>
       <li class="li-inline nav-item"><a href="/dashboard">Dashboard</a></li>
-      {{#if}}
-      <li class="li-inline nav-item"><a href="#" id="logout-form">Logout</a></li>
+      <li class="li-inline nav-item"><a href="#" id="logout-link">Logout</a></li>
     </ul>
   </nav>
   <header class="hero">
@@ -25,9 +24,12 @@
     {{{body}}}
   </main>
 
-  <footer class="footer flex-row justify-center">
+  {{!-- <footer class="footer flex-row justify-center">
     <a href="/dashboard/new">➕ New Post</a>
-  </footer>
+  </footer> --}}
+<footer class="footer flex-row justify-center">
+  <a href="/dashboard/new" class="inline-block px-6 py-3 rounded-full bg-red-500 text-white font-bold hover:bg-red-600 transition-colors duration-300">➕ New Post</a>
+</footer>
 </body>
 
 </html>
